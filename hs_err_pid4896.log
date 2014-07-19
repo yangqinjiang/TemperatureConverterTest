@@ -1,0 +1,120 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:129), pid=4896, tid=7560
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version: 7.0_21-b11
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23.21-b01 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002ea0800):  JavaThread "Unknown thread" [_thread_in_vm, id=7560, stack(0x0000000002a90000,0x0000000002b90000)]
+
+Stack: [0x0000000002a90000,0x0000000002b90000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002ea0800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=7560, stack(0x0000000002a90000,0x0000000002b90000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.025 loading class 0x0000000002eb48c0 done
+Event: 0.025 loading class 0x0000000002eb4770 done
+Event: 0.025 loading class 0x0000000002eb4a70
+Event: 0.025 loading class 0x0000000002ef2540
+Event: 0.025 loading class 0x0000000002ef2540 done
+Event: 0.025 loading class 0x0000000002ef3140
+Event: 0.025 loading class 0x0000000002ef3140 done
+Event: 0.025 loading class 0x00000000091e28d0
+Event: 0.025 loading class 0x00000000091e28d0 done
+Event: 0.026 loading class 0x0000000002eb4a70 done
+
+
+Dynamic libraries:
+0x00007ff6382b0000 - 0x00007ff6382e3000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x00007ff9f0680000 - 0x00007ff9f082a000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff9ee550000 - 0x00007ff9ee68a000 	C:\WINDOWS\system32\KERNEL32.DLL
+0x00007ff9edca0000 - 0x00007ff9eddaf000 	C:\WINDOWS\system32\KERNELBASE.dll
+0x00007ff9ec600000 - 0x00007ff9ec688000 	C:\WINDOWS\system32\apphelp.dll
+0x00007ff9e0130000 - 0x00007ff9e017f000 	C:\WINDOWS\AppPatch\AppPatch64\AcGenral.DLL
+0x00007ff9f0300000 - 0x00007ff9f03a7000 	C:\WINDOWS\system32\msvcrt.dll
+0x00007ff9ed830000 - 0x00007ff9ed85b000 	C:\WINDOWS\SYSTEM32\SspiCli.dll
+0x00007ff9ee980000 - 0x00007ff9ee9d1000 	C:\WINDOWS\system32\SHLWAPI.dll
+0x00007ff9ee800000 - 0x00007ff9ee971000 	C:\WINDOWS\system32\USER32.dll
+0x00007ff9ee3d0000 - 0x00007ff9ee548000 	C:\WINDOWS\system32\ole32.dll
+0x00007ff9eed60000 - 0x00007ff9f0180000 	C:\WINDOWS\system32\SHELL32.dll
+0x00007ff9ed000000 - 0x00007ff9ed01e000 	C:\WINDOWS\SYSTEM32\USERENV.dll
+0x00007ff9ee740000 - 0x00007ff9ee7e5000 	C:\WINDOWS\system32\ADVAPI32.dll
+0x00007ff9e5990000 - 0x00007ff9e59ab000 	C:\WINDOWS\SYSTEM32\MPR.dll
+0x00007ff9f03b0000 - 0x00007ff9f04e6000 	C:\WINDOWS\system32\RPCRT4.dll
+0x00007ff9f02a0000 - 0x00007ff9f02f7000 	C:\WINDOWS\SYSTEM32\sechost.dll
+0x00007ff9eeb80000 - 0x00007ff9eed56000 	C:\WINDOWS\SYSTEM32\combase.dll
+0x00007ff9f0520000 - 0x00007ff9f0664000 	C:\WINDOWS\system32\GDI32.dll
+0x00007ff9ed9f0000 - 0x00007ff9eda04000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x00007ff9ec2a0000 - 0x00007ff9ec33f000 	C:\WINDOWS\SYSTEM32\SHCORE.dll
+0x00007ff9edf60000 - 0x00007ff9edf94000 	C:\WINDOWS\system32\IMM32.DLL
+0x00007ff9ee050000 - 0x00007ff9ee189000 	C:\WINDOWS\system32\MSCTF.dll
+0x00007ff9e91d0000 - 0x00007ff9e942a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.17031_none_6242a4b3ecbb55a1\COMCTL32.dll
+0x000000006bb90000 - 0x000000006bc61000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x000000006b460000 - 0x000000006bb81000 	C:\Program Files\Java\jre7\bin\server\jvm.dll
+0x00007ff9e5c20000 - 0x00007ff9e5c29000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff9ebd20000 - 0x00007ff9ebd3f000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff9ee7f0000 - 0x00007ff9ee7f7000 	C:\WINDOWS\system32\PSAPI.DLL
+0x00007ff9ee190000 - 0x00007ff9ee1e8000 	C:\WINDOWS\system32\WS2_32.dll
+0x00007ff9eb990000 - 0x00007ff9eb9ba000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ff9f0510000 - 0x00007ff9f0519000 	C:\WINDOWS\system32\NSI.dll
+0x00007ff9ede00000 - 0x00007ff9ede4a000 	C:\WINDOWS\SYSTEM32\cfgmgr32.dll
+0x00007ff9ec880000 - 0x00007ff9ec8a6000 	C:\WINDOWS\SYSTEM32\DEVOBJ.dll
+0x000000006b450000 - 0x000000006b45f000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x000000006b420000 - 0x000000006b448000 	C:\Program Files\Java\jre7\bin\java.dll
+0x000000006b400000 - 0x000000006b415000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\downLoadSoftwave\adt-bundle-windows-x86_64-20140321\sdk\platforms\android-19\android.jar 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 30129 -testLoaderClass org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestLoader -loaderpluginname org.eclipse.jdt.junit.runtime -test com.example.aatg.tc.test.TemperatureConverterTest:testCelsiusToFahrenheit
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0_21
+PATH=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Python33\;c:\ruby\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;D:\Program Files\MATLAB\R2010b\runtime\win64;D:\Program Files\MATLAB\R2010b\bin;C:\windows\WebCallCtrl;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\Program Files (x86)\Git\cmd;D:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft\Web Platform Installer\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\TDM-GCC-64\bin;;D:\Graphviz2.34\bin;D:\downLoadSoftwave\apache-maven-3.1.1-bin\apache-maven-3.1.1\bin;D:\phing-2.6.1\bin;D:\Program Files\nodejs\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;D:\groovy-2.4.0-beta-1\bin;D:\scala\bin;C:\Go\bin;D:\downLoadSoftwave\gradle-1.12-all\gradle-1.12\bin;C:\Program Files\Java\jdk1.7.0_21\bin;D:\Java Program Files\apache-ant-1.9.2\bin;D:\Program Files (x86)\Android\android-studio\sdk\tools\templates\gradle\gradle-1.6\bin;C:\Go\bin;D:\Graphviz2.34\bin;D:\X\golang\bin;C:\wamp\bin\php\php5.3.3;D:\downLoadSoftwave\redis-2.4.5-win32-win64\32bit;D:\Program Files\Java\jre6\bin;d:\Program Files (x86)\SSH Communications Security\SSH Secure Shell;D:\downLoadSoftwave\apache-maven-3.1.1-bin\apache-maven-3.1.1;C:\Users\lenovo\AppData\Roaming\npm
+USERNAME=lenovo
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 , 64 bit Build 9200 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 4056852k(1982720k free), swap 5629716k(2767140k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (23.21-b01) for windows-amd64 JRE (1.7.0_21-b11), built on Apr  4 2013 08:11:28 by "java_re" with unknown MS VC++:1600
+
+time: Sat Jul 19 15:10:43 2014
+elapsed time: 0 seconds
+
