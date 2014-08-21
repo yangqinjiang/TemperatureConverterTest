@@ -65,7 +65,7 @@ public class TemperatureConverterActivityTests extends
 
 	}
 
-	public void testHasInputFields() {// ÊÇ·ñ´æÔÚÁ½¸öÊäÈë¿ò
+	public void testHasInputFields() {// æ˜¯å¦å­˜åœ¨ä¸¤ä¸ªè¾“å…¥æ¡†
 
 		assertNotNull(mCelsius);
 		assertNotNull(mFahrenheit);
@@ -74,19 +74,19 @@ public class TemperatureConverterActivityTests extends
 
 	}
 
-	public void testFieldsShouldStartEmpty() {// ¼ì²éÊÇ·ñÎª³õÊ¼»¯Ê±,ÊäÈë¿òÖµÎª¿Õ
+	public void testFieldsShouldStartEmpty() {// æ£€æŸ¥æ˜¯å¦ä¸ºåˆå§‹åŒ–æ—¶,è¾“å…¥æ¡†å€¼ä¸ºç©º
 		assertEquals("", mCelsius.getText().toString());
 		assertEquals("", mFahrenheit.getText().toString());
 	}
 
-	public void testFieldsOnScreen() {// ¼ì²éÊÇ·ñÔÚScreenÉÏ
+	public void testFieldsOnScreen() {// æ£€æŸ¥æ˜¯å¦åœ¨Screenä¸Š
 		Window window = mActivity.getWindow();
-		View origin = window.getDecorView();// »ñÈ¡¸¸´°¿Ú
+		View origin = window.getDecorView();// è·å–çˆ¶çª—å£
 		assertOnScreen(origin, mCelsius);
 		assertOnScreen(origin, mFahrenheit);
 	}
 
-	public void testAlignment() {// ¼ì²é¶ÔÆë
+	public void testAlignment() {// æ£€æŸ¥å¯¹é½
 		assertLeftAligned(mCelsiusLabel, mCelsius);
 		assertLeftAligned(mFahrenheitLabel, mFahrenheit);
 		assertLeftAligned(mFahrenheit, mCelsius);
@@ -94,7 +94,7 @@ public class TemperatureConverterActivityTests extends
 
 	}
 
-	// Ìî³äÀàĞÍ
+	// å¡«å……ç±»å‹
 	public void testCelsiusInputFieldCoverEntireScreen() {
 		int expected = LayoutParams.MATCH_PARENT;
 		LayoutParams lp = mCelsius.getLayoutParams();
@@ -106,7 +106,7 @@ public class TemperatureConverterActivityTests extends
 				lp.height);
 	}
 
-	// Ìî³äÀàĞÍ
+	// å¡«å……ç±»å‹
 	public void testFahrenheitInputFieldCoverEntireScreen() {
 		int expected = LayoutParams.MATCH_PARENT;
 		LayoutParams lp = mFahrenheit.getLayoutParams();
@@ -118,14 +118,14 @@ public class TemperatureConverterActivityTests extends
 				lp.height);
 	}
 
-	// ¼ì²é×ÖÌå,ÔÚres/values/dimens.xmlÏÂ¼ÓÈë<dimen name="label_text_size">24px</dimen>
-	//ÔÚcelsius_label±êÇ©ÏÂ¼ÓÈëandroid:textSize="@dimen/label_text_size"
+	// æ£€æŸ¥å­—ä½“,åœ¨res/values/dimens.xmlä¸‹åŠ å…¥<dimen name="label_text_size">24px</dimen>
+	//åœ¨celsius_labelæ ‡ç­¾ä¸‹åŠ å…¥android:textSize="@dimen/label_text_size"
 	public void testFontSizes() {
 		float expected = 24.0f;
 		assertEquals(expected, mCelsiusLabel.getTextSize());
 		assertEquals(expected, mFahrenheitLabel.getTextSize());
 	}
-	//¼ì²é±ß¾à
+	//æ£€æŸ¥è¾¹è·
 	public void testMargins(){
 		LinearLayout.LayoutParams lp;
 		int expected = 6;
@@ -137,21 +137,21 @@ public class TemperatureConverterActivityTests extends
 		assertEquals(expected, lp.leftMargin);
 		assertEquals(expected, lp.rightMargin);
 	}
-	public void testJustification(){//ÊäÈë¿òµÄÎÄ×ÖÓÒ¶ÔÆë
-		//ÓÒ,´¹Ö±¾ÓÖĞ
+	public void testJustification(){//è¾“å…¥æ¡†çš„æ–‡å­—å³å¯¹é½
+		//å³,å‚ç›´å±…ä¸­
 		int expected = Gravity.RIGHT | Gravity.CENTER_VERTICAL;
 		int actual = mCelsius.getGravity();
 		assertEquals(String.format("Expected 0x%02x but was 0x%02x",expected,actual),expected, actual);
 		actual = mFahrenheit.getGravity();
 		assertEquals(String.format("Expected 0x%02x but was 0x%02x",expected,actual),expected, actual);
 	}
-	//µ¯³öĞéÄâ¼üÅÌÊ±,²»»áµ²×¡×îÏÂÃæµÄÊäÈë¿ò
+	//å¼¹å‡ºè™šæ‹Ÿé”®ç›˜æ—¶,ä¸ä¼šæŒ¡ä½æœ€ä¸‹é¢çš„è¾“å…¥æ¡†
 	public void testVirtualKeyboardSpaceReserved(){
 		int expected = 380;
 		int actual = mFahrenheit.getBottom();
 		assertTrue(actual <=expected);
 	}
-	//²âÊÔÊäÈëÓëÊä³ö
+	//æµ‹è¯•è¾“å…¥ä¸è¾“å‡º
 	@UiThreadTest
 	public void testFahrenheitToCelsiusConversion(){
 		mCelsius.clear();
